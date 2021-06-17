@@ -2,5 +2,146 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  padding: 1% 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header div {
+  width: 50%;
+}
+
+.header .header-img > img {
+  width: 14%;
+  padding: 1% 2%;
+}
+
+.header .header-img img:last-child {
+  cursor: pointer;
+  float: right;
+  border-radius: 5px;
+  padding: 3px;
+  display: none;
+}
+
+.header .header-img img:last-child:hover {
+  background-color: #ccc;
+}
+
+.header .header-nav {
+  overflow: hidden;
+}
+
+.header .header-nav div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header-nav div a {
+  border-radius: 10px;
+  text-decoration: none;
+  color: #000;
+  line-height: 60px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  width: 24%;
+  text-align: center;
+}
+
+.main {
+  height: 50%;
+  padding: 4% 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .buy {
+  height: 80%;
+  padding-left: 7%;
+  width: 40%;
+}
+
+.main .buy div:first-child {
+  width: 100%;
+  border-left: 10px solid pink;
+  padding-left: 10px;
+}
+
+.main .buy div:first-child span {
+  font-size: 45px;
+  font-weight: 300;
+}
+
+.main .buy div:first-child p {
+  color: #969090;
+}
+
+.main .buy div:last-child .btn-buy {
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 40px;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#cd556e), to(#cd3e26));
+  background-image: linear-gradient(to right, #cd556e, #cd3e26);
+}
+
+.main .img {
+  height: 420px;
+  width: 60%;
+  position: relative;
+}
+
+.main .img .cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main .img .add .cart {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#cd556e), to(#cd3e26));
+  background-image: linear-gradient(#cd556e, #cd3e26);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  left: 30%;
+  overflow: hidden;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.main .img .add .cart div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
 }
 /*# sourceMappingURL=style.css.map */

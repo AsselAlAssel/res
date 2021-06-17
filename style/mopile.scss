@@ -1,0 +1,58 @@
+// for mobile
+* {
+    margin: 0;
+}
+
+.header {
+    padding: 0;
+    flex-direction: column;
+    div {
+        width: 100%;
+    }
+    .header-img {
+        img:last-child {
+            display: block;
+        }
+    }
+    .header-nav {
+        overflow: hidden;
+        .active {
+            margin-top: -100%;
+        }
+    }
+    .header-nav div {
+        position: absolute;
+        flex-direction: column;
+        background-color: #e9668a;
+        overflow: hidden;
+        transition: margin-top .5s;
+        z-index: 999;
+        a {
+            width: 100%;
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+
+.main {
+    flex-direction: column-reverse;
+    .img,
+    .buy {
+        width: 100%;
+    }
+    .img {
+        height: 250px;
+        width: 100%;
+        margin-bottom: 10%;
+        s.add {
+            .cart {
+                civ {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}

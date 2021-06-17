@@ -1,5 +1,122 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    // font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+// for header 
+.header {
+    padding: 1% 2%;
+    @include flex;
+    div {
+        width: 50%;
+    }
+    // for the img header
+    .header-img>img {
+        width: 14%;
+        padding: 1% 2%;
+    }
+    .header-img {
+        img:last-child {
+            cursor: pointer;
+            float: right;
+            border-radius: 5px;
+            padding: 3px;
+            display: none;
+        }
+        img:last-child:hover {
+            background-color: #ccc;
+        }
+    }
+    // for the navbar
+    .header-nav {
+        overflow: hidden;
+        div {
+            width: 100%;
+            @include flex();
+            a {
+                border-radius: 10px;
+                text-decoration: none;
+                color: #000;
+                line-height: 60px;
+                transition: 0.4s ease-in-out;
+                width: 24%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// for main
+.main {
+    height: 50%;
+    padding: 4% 0;
+    overflow: hidden;
+    @include flex();
+    .buy {
+        height: 80%;
+        padding-left: 7%;
+        width: 40%;
+        div:first-child {
+            width: 100%;
+            border-left: 10px solid pink;
+            padding-left: 10px;
+            span {
+                font-size: 45px;
+                font-weight: 300;
+            }
+            p {
+                color: rgb(150, 144, 144);
+            }
+        }
+        div:last-child .btn-buy {
+            text-align: center;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 40px;
+            color: #fff;
+            background-image: linear-gradient(to right, #cd556e, #cd3e26);
+        }
+    }
+    .img {
+        height: 420px;
+        width: 60%;
+        position: relative;
+        .cont {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .add {
+            .cart {
+                background-image: linear-gradient( #cd556e, #cd3e26);
+                height: 100%;
+                position: absolute;
+                width: 100%;
+                left: 30%;
+                overflow: hidden;
+                border-radius: 10px 0px 0px 10px;
+                div {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    text-align: center;
+    img {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
 }

@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+}
+
+.header {
+  padding: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header div {
+  width: 100%;
+}
+
+.header .header-img img:last-child {
+  display: block;
+}
+
+.header .header-nav {
+  overflow: hidden;
+}
+
+.header .header-nav .active {
+  margin-top: -100%;
+}
+
+.header .header-nav div {
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #e9668a;
+  overflow: hidden;
+  -webkit-transition: margin-top .5s;
+  transition: margin-top .5s;
+  z-index: 999;
+}
+
+.header .header-nav div a {
+  width: 100%;
+  color: white;
+}
+
+.main {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.main .img,
+.main .buy {
+  width: 100%;
+}
+
+.main .img {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+.main .img s.add .cart civ {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=mopile.css.map */
